@@ -1,5 +1,5 @@
 /* =====================================================================
-   NIXO CONTENT GRID — interactions
+   NIXO CONTENT GRID - interactions
    Vanilla JS only. No dependencies.
    ===================================================================== */
 (function () {
@@ -160,7 +160,7 @@
 
     /* Safety sweep: an instant jump (deep link like /#pricing, or restored
        scroll position) can carry an element from below the fold to above it
-       without it ever intersecting — it would stay invisible forever if the
+       without it ever intersecting; it would stay invisible forever if the
        user scrolled back up. Reveal anything at or above the viewport. */
     const sweep = () => {
       items.forEach(el => {
@@ -509,7 +509,7 @@
       const ok = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
       msg.className = 'cta__msg ' + (ok ? 'ok' : 'err');
       msg.textContent = ok
-        ? '🎉 You’re in! Your FREE content calendar is on its way to ' + v
+        ? 'You’re in! Your FREE content calendar is on its way to ' + v
         : 'Please enter a valid email address.';
       if (ok) { input.value = ''; f.querySelector('.btn').style.transform = 'scale(.97)'; setTimeout(() => f.querySelector('.btn').style.transform = '', 200); }
     });

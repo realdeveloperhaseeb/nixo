@@ -93,6 +93,33 @@ p{margin:0 0 1rem}
 .grid--4{grid-template-columns:repeat(4,1fr)}
 
 /* ---------- SHARED BITS ---------- */
+/* ---------- ICONS ----------
+   Inline SVG sprite (#i-* symbols in index.html). No icon font, no emoji.
+   The sprite is hidden with width/height 0 rather than display:none, which
+   some engines treat as a reason not to resolve <use> references. */
+.sprite{position:absolute;width:0;height:0;overflow:hidden}
+.ico{
+  width:1em;height:1em;display:block;flex:none;
+  fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
+}
+.ico--fill{fill:currentColor;stroke:none}
+
+/* per-context sizing */
+.topbar__track i{display:inline-flex;align-items:center}
+.topbar__track i .ico{width:11px;height:11px}
+.scard__icon .ico{width:26px;height:26px;color:var(--navy);stroke-width:1.9}
+.icard__emoji .ico{width:24px;height:24px;color:var(--navy);stroke-width:1.9}
+.checklist i .ico{width:13px;height:13px;stroke-width:3}
+.pcard__list i .ico{width:11px;height:11px;stroke-width:3}
+.cta__c i .ico{width:15px;height:15px}
+.link-arrow i{display:inline-flex}
+.link-arrow i .ico{width:17px;height:17px}
+.socials a .ico{width:18px;height:18px}
+.tcard__stars{display:flex;gap:3px}
+.tcard__stars .ico{width:16px;height:16px}
+.ptable td.yes .ico{width:18px;height:18px;stroke-width:2.6}
+.ptable td.no .ico{width:15px;height:15px;opacity:.55}
+
 .tag{
   display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;
   padding:7px 16px;border-radius:99px;background:rgba(83,243,135,.16);
