@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nixo Content Grid — Crafting Brands, Nurturing Stories</title>
+<meta name="description" content="We craft stories that stick, visuals that speak, and strategies that scale. Content creation, social media strategy, reels &amp; branding by Nixo." />
+<link rel="icon" href="assets/img/wqwe.png" type="image/png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Nanum+Pen+Script&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader">
+  <div class="preloader__inner">
+    <img src="assets/img/wqwe.png" alt="" class="preloader__mark" />
+    <div class="preloader__bar"><span></span></div>
+    <p class="preloader__txt">Loading the grid…</p>
+  </div>
+</div>
+
+<!-- ============ CURSOR ============ -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress"><span id="scrollBar"></span></div>
+
+<!-- ============ ANNOUNCEMENT MARQUEE ============ -->
+<div class="topbar" id="topbar">
+  <div class="topbar__marquee">
+    <div class="topbar__track">
+      <span>Stop Posting Blindly!</span><i>✦</i>
+      <span>Get a FREE Content Calendar &amp; Watch Your Brand Grow!</span><i>✦</i>
+      <span>Nixo Dominates</span><i>✦</i>
+      <span>Bold Brands, Bigger Impact.</span><i>✦</i>
+      <span>Stop Posting Blindly!</span><i>✦</i>
+      <span>Get a FREE Content Calendar &amp; Watch Your Brand Grow!</span><i>✦</i>
+      <span>Nixo Dominates</span><i>✦</i>
+      <span>Bold Brands, Bigger Impact.</span><i>✦</i>
+    </div>
+  </div>
+  <button class="topbar__close" id="topbarClose" aria-label="Dismiss">&times;</button>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#home" class="brand" data-cursor="link">
+      <img src="assets/img/hd-logo.png" alt="Nixo Content Grid" />
+    </a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link is-active">Home</a></li>
+        <li><a href="#about" class="nav__link">About Us</a></li>
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#industries" class="nav__link">Case Studies</a></li>
+        <li><a href="#process" class="nav__link">Process</a></li>
+        <li><a href="#pricing" class="nav__link">Pricing</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a href="#contact" class="btn btn--primary btn--sm">Get a quote</a>
+      </div>
+    </nav>
+
+    <div class="header__right">
+      <a href="#contact" class="btn btn--primary btn--sm header__quote" data-cursor="link">
+        <span>Get a quote</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero__bg">
+    <span class="blob blob--1"></span>
+    <span class="blob blob--2"></span>
+    <div class="grid-lines"></div>
+  </div>
+
+  <img src="assets/img/Marketing-Agency-Hero-Ornament-5.webp" class="orn orn--1 parallax" data-speed="22" alt="" />
+  <img src="assets/img/Marketing-Agency-Hero-Ornament-7.webp" class="orn orn--2 parallax" data-speed="-18" alt="" />
+  <img src="assets/img/Marketing-Agency-Hero-Ornament-9.webp" class="orn orn--3 parallax" data-speed="26" alt="" />
+  <img src="assets/img/Marketing-Agency-Hero-Ornament-10.webp" class="orn orn--4 parallax" data-speed="-24" alt="" />
+
+  <div class="container hero__inner">
+    <div class="hero__copy">
+      <p class="eyebrow reveal">
+        <span class="dot"></span> Hey, It’s nixo here! 🙂
+      </p>
+
+      <h1 class="hero__title reveal" data-delay="80">
+        Crafting brands, nurturing
+        <span class="script-word">stories</span>
+      </h1>
+
+      <p class="hero__rotator reveal" data-delay="140">
+        We build
+        <span class="rotator" id="rotator"><span class="rotator__item">content that connects</span></span>
+      </p>
+
+      <p class="hero__lead reveal" data-delay="200">
+        We craft stories that stick, visuals that speak, and strategies that scale. Your brand isn’t
+        just another name—it’s a movement in the making. So, are you ready to make waves?
+      </p>
+
+      <div class="hero__actions reveal" data-delay="260">
+        <a href="#contact" class="btn btn--primary btn--lg magnetic" data-cursor="link">
+          <span>Get a FREE Content Calendar Today!</span>
+        </a>
+        <a href="#services" class="btn btn--ghost btn--lg magnetic" data-cursor="link">
+          <span>Experience the Nixo Effect!</span>
+        </a>
+      </div>
+
+      <div class="hero__mini reveal" data-delay="320">
+        <div class="hero__avatars">
+          <img src="assets/img/marketing-6.png" alt="" />
+          <img src="assets/img/dada.png" alt="" />
+          <img src="assets/img/marketing-5.png" alt="" />
+          <img src="assets/img/ewew.png" alt="" />
+        </div>
+        <p>Join the brands that trust Nixo to amplify their online presence!</p>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="hero__collage">
+        <figure class="hcard hcard--main tilt">
+          <img src="assets/img/fefw.png" alt="Nixo content team at work" />
+        </figure>
+
+        <figure class="hcard hcard--a float" style="--d:.2s">
+          <img src="assets/img/marketing-5.png" alt="" />
+        </figure>
+
+        <figure class="hcard hcard--b float" style="--d:.9s">
+          <img src="assets/img/making.png" alt="" />
+        </figure>
+
+        <div class="hchip hchip--engage float" style="--d:.5s">
+          <strong id="chipEngage">+312%</strong><span>Engagement</span>
+        </div>
+
+        <div class="hchip hchip--reels float" style="--d:1.3s">
+          <span class="pulse-dot"></span><strong>30 Reels</strong><span>shipped / mo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- stat strip -->
+  <div class="container">
+    <div class="statstrip reveal">
+      <div class="statstrip__item"><b class="count" data-to="11">0</b><span>Years of experience</span></div>
+      <div class="statstrip__item"><b class="count" data-to="3000" data-suffix="+">0</b><span>Satisfied clients</span></div>
+      <div class="statstrip__item"><b class="count" data-to="60" data-suffix="+">0</b><span>Posts / month</span></div>
+      <div class="statstrip__item"><b class="count" data-to="24" data-suffix="/7">0</b><span>Support &amp; chat</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOGO MARQUEE ============ -->
+<section class="logos" id="clients">
+  <div class="container">
+    <p class="logos__title reveal">We’ve worked with over <b>3000+</b> clients around the world!</p>
+  </div>
+  <div class="marquee" data-marquee>
+    <div class="marquee__track">
+      <img src="assets/img/1.png" alt="v500 systems" />
+      <img src="assets/img/2.png" alt="Client" />
+      <img src="assets/img/3.png" alt="Client" />
+      <img src="assets/img/4.png" alt="Client" />
+      <img src="assets/img/5.png" alt="Client" />
+      <img src="assets/img/GAMING-STARS.png" alt="Gaming Stars" />
+      <img src="assets/img/GAMING-STARS-1.png" alt="Client" />
+      <img src="assets/img/GAMING-STARS-2.png" alt="Client" />
+      <img src="assets/img/1.png" alt="" />
+      <img src="assets/img/2.png" alt="" />
+      <img src="assets/img/3.png" alt="" />
+      <img src="assets/img/4.png" alt="" />
+      <img src="assets/img/5.png" alt="" />
+      <img src="assets/img/GAMING-STARS.png" alt="" />
+      <img src="assets/img/GAMING-STARS-1.png" alt="" />
+      <img src="assets/img/GAMING-STARS-2.png" alt="" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about section" id="about">
+  <img src="assets/img/Marketing-Agency-About-Us-Hero-Ornament-2.webp" class="orn orn--about parallax" data-speed="18" alt="" />
+  <div class="container about__inner">
+    <div class="about__media">
+      <figure class="about__img tilt">
+        <img src="assets/img/making-seb-2.png" alt="The Nixo team planning content" />
+      </figure>
+      <div class="about__badge float">
+        <img src="assets/img/wqwe.png" alt="" />
+        <div><b>Nixo Fuels Brands</b><span>Since 2014</span></div>
+      </div>
+      <div class="about__ring">
+        <svg viewBox="0 0 120 120"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fg" cx="60" cy="60" r="52"/></svg>
+        <div class="about__ring-txt"><b class="count" data-to="98" data-suffix="%">0</b><span>Retention</span></div>
+      </div>
+    </div>
+
+    <div class="about__copy">
+      <span class="tag reveal">Nixo Fuels Brands</span>
+      <h2 class="reveal" data-delay="60">
+        The Power of Content,<br />Perfected by <span class="hl">Nixo</span>.
+      </h2>
+      <p class="lead reveal" data-delay="120">
+        Fuel Your Brand with Nixo-Powered Content! Social media success isn’t just about posting—it’s
+        about strategic storytelling, creative visuals, and audience-first engagement. We handle
+        everything so you can focus on growing your brand.
+      </p>
+
+      <ul class="checklist reveal" data-delay="180">
+        <li><i>✔</i><b>Content Creation</b> – Posts, captions &amp; visuals tailored for you.</li>
+        <li><i>✔</i><b>Content Calendar</b> – A structured posting plan.</li>
+        <li><i>✔</i><b>Social Media Strategy</b> – Growth-focused content planning.</li>
+        <li><i>✔</i><b>Reels &amp; Videos</b> – High-impact short-form content.</li>
+        <li><i>✔</i><b>Account Management</b> – Scheduling &amp; audience engagement.</li>
+        <li><i>✔</i><b>Analytics &amp; Tracking</b> – Performance insights for better reach.</li>
+      </ul>
+
+      <!-- SIGNATURE -->
+      <div class="sign reveal" data-delay="240">
+        <div class="sign__mark">
+          <span class="sign__name">Nixo</span>
+          <svg class="sign__flourish" viewBox="0 0 220 40" fill="none">
+            <path d="M4 30C40 8 78 4 108 14c26 9 12 20-2 16-13-4 6-19 44-19 24 0 47 6 66 15" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="sign__meta">
+          <b>That’s Nixo.</b>
+          <span>Bold Brands, Bigger Impact.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES / TABS ============ -->
+<section class="services section section--mint" id="services">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag reveal">No More Dead Feeds. No More Missed Opportunities!</span>
+      <h2 class="reveal" data-delay="60">Content That Connects. Strategies That Scale.<br />We Build It All. <span class="script-word script-word--sm">Nixo Wins!</span></h2>
+      <p class="lead reveal" data-delay="120">
+        Social media isn’t just about posting—it’s about impact. Your audience needs value,
+        consistency, and creativity. That’s where we come in.
+      </p>
+    </div>
+
+    <!-- TABS -->
+    <div class="tabs reveal" data-delay="160">
+      <div class="tabs__nav" role="tablist">
+        <button class="tabs__btn is-active" data-tab="t1" role="tab">Content Creation</button>
+        <button class="tabs__btn" data-tab="t2" role="tab">Content Calendar</button>
+        <button class="tabs__btn" data-tab="t3" role="tab">Social Media Strategy</button>
+        <button class="tabs__btn" data-tab="t4" role="tab">Reels &amp; Videos</button>
+        <button class="tabs__btn" data-tab="t5" role="tab">Account Management</button>
+        <button class="tabs__btn" data-tab="t6" role="tab">Analytics &amp; Tracking</button>
+        <span class="tabs__pill" id="tabsPill"></span>
+      </div>
+
+      <div class="tabs__body">
+        <div class="tabs__panel is-active" id="t1">
+          <div class="tabs__grid">
+            <div class="tabs__txt">
+              <h3>Content Creation</h3>
+              <p>Posts, captions &amp; visuals tailored for you. We craft high-impact social media content that makes businesses impossible to ignore — built around your voice, not a template.</p>
+              <ul class="mini-list"><li>Static posts &amp; carousels</li><li>Brand-aligned captions</li><li>On-trend visual systems</li></ul>
+              <a href="#contact" class="link-arrow">Learn More <i>→</i></a>
+            </div>
+            <figure class="tabs__img"><img src="assets/img/marketing-5.png" alt="" /></figure>
+          </div>
+        </div>
+
+        <div class="tabs__panel" id="t2">
+          <div class="tabs__grid">
+            <div class="tabs__txt">
+              <h3>Content Calendar</h3>
+              <p>A structured posting plan that keeps you consistent. Content calendars that keep you consistent, storytelling that captivates, and marketing strategies that deliver results.</p>
+              <ul class="mini-list"><li>Monthly planning grid</li><li>Campaign &amp; launch mapping</li><li>Approval-ready schedules</li></ul>
+              <a href="#contact" class="link-arrow">Learn More <i>→</i></a>
+            </div>
+            <figure class="tabs__img"><img src="assets/img/making-seb-2.png" alt="" /></figure>
+          </div>
+        </div>
+
+        <div class="tabs__panel" id="t3">
+          <div class="tabs__grid">
+            <div class="tabs__txt">
+              <h3>Social Media Strategy</h3>
+              <p>Growth-focused content planning. We analyze your brand, audience, and competitors to create a winning strategy that turns social media into your most powerful business tool.</p>
+              <ul class="mini-list"><li>Audience &amp; competitor research</li><li>Channel positioning</li><li>Growth roadmap</li></ul>
+              <a href="#contact" class="link-arrow">Learn More <i>→</i></a>
+            </div>
+            <figure class="tabs__img"><img src="assets/img/fefw.png" alt="" /></figure>
+          </div>
+        </div>
+
+        <div class="tabs__panel" id="t4">
+          <div class="tabs__grid">
+            <div class="tabs__txt">
+              <h3>Reels &amp; Videos</h3>
+              <p>High-impact short-form content. High-quality, trend-driven videos designed to boost engagement and stop the scroll where it matters most.</p>
+              <ul class="mini-list"><li>HD reels &amp; shorts</li><li>Hooks, cuts &amp; captions</li><li>Motion graphics</li></ul>
+              <a href="#contact" class="link-arrow">Learn More <i>→</i></a>
+            </div>
+            <figure class="tabs__img"><img src="assets/img/making.png" alt="" /></figure>
+          </div>
+        </div>
+
+        <div class="tabs__panel" id="t5">
+          <div class="tabs__grid">
+            <div class="tabs__txt">
+              <h3>Account Management</h3>
+              <p>Scheduling &amp; audience engagement. A dedicated account manager keeps your channels alive, your community answered, and your brand consistent — every single day.</p>
+              <ul class="mini-list"><li>Dedicated account manager</li><li>Community engagement</li><li>24/7 customer &amp; chat support</li></ul>
+              <a href="#contact" class="link-arrow">Learn More <i>→</i></a>
+            </div>
+            <figure class="tabs__img"><img src="assets/img/ewew.png" alt="" /></figure>
+          </div>
+        </div>
+
+        <div class="tabs__panel" id="t6">
+          <div class="tabs__grid">
+            <div class="tabs__txt">
+              <h3>Analytics &amp; Tracking</h3>
+              <p>Performance insights for better reach. We track performance, refine strategies, and ensure your brand keeps growing — with numbers you can actually act on.</p>
+              <ul class="mini-list"><li>Advanced performance analytics</li><li>Monthly reporting</li><li>Strategy calls</li></ul>
+              <a href="#contact" class="link-arrow">Learn More <i>→</i></a>
+            </div>
+            <figure class="tabs__img"><img src="assets/img/dada.png" alt="" /></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICE CARDS GRID ============ -->
+<section class="cards section">
+  <div class="container">
+    <div class="sec-head sec-head--center">
+      <span class="tag reveal">Social Media Success? It Starts Here!</span>
+      <h2 class="reveal" data-delay="60">Experience the <span class="hl">Nixo Effect!</span></h2>
+      <p class="lead reveal" data-delay="120">
+        If you’re tired of low engagement, inconsistent branding, and a lack of direction—it’s time
+        for Nixo. Your Brand. Your Voice. Our Strategy.
+      </p>
+    </div>
+
+    <div class="grid grid--4">
+      <article class="scard reveal tilt" data-delay="0">
+        <span class="scard__num">01</span>
+        <div class="scard__icon">✍️</div>
+        <h3>Copywriting &amp; Captions</h3>
+        <p>Engaging, brand-aligned captions that spark conversations and drive action.</p>
+        <a href="#contact" class="link-arrow">Learn More <i>→</i></a>
+        <span class="scard__glow"></span>
+      </article>
+
+      <article class="scard reveal tilt" data-delay="90">
+        <span class="scard__num">02</span>
+        <div class="scard__icon">🎨</div>
+        <h3>Graphic Design &amp; Carousels</h3>
+        <p>Eye-catching visuals that stop the scroll and deliver your message creatively.</p>
+        <a href="#contact" class="link-arrow">Learn More <i>→</i></a>
+        <span class="scard__glow"></span>
+      </article>
+
+      <article class="scard reveal tilt" data-delay="180">
+        <span class="scard__num">03</span>
+        <div class="scard__icon">🎬</div>
+        <h3>Short-Form Video &amp; Reels</h3>
+        <p>High-quality, trend-driven videos designed to boost engagement.</p>
+        <a href="#contact" class="link-arrow">Learn More <i>→</i></a>
+        <span class="scard__glow"></span>
+      </article>
+
+      <article class="scard reveal tilt" data-delay="270">
+        <span class="scard__num">04</span>
+        <div class="scard__icon">#️⃣</div>
+        <h3>Hashtag &amp; Trend Research</h3>
+        <p>Strategic hashtag and trend discovery to maximize content visibility.</p>
+        <a href="#contact" class="link-arrow">Learn More <i>→</i></a>
+        <span class="scard__glow"></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURE / DOMINATE BAND ============ -->
+<section class="dominate section section--navy">
+  <span class="blob blob--3"></span>
+  <div class="container dominate__inner">
+    <div class="dominate__copy">
+      <span class="tag tag--light reveal">Built for Brands That Dare to Dominate</span>
+      <h2 class="reveal" data-delay="60">Creating the Content That Creates More <span class="script-word script-word--light">Customers</span></h2>
+      <p class="lead reveal" data-delay="120">
+        We’re not just another agency—we’re the powerhouse behind brands that refuse to blend in. At
+        Nixo, we create high-impact social media content, strategic branding, and viral marketing
+        campaigns that make businesses impossible to ignore. From startups to industry leaders, we
+        help brands grow, engage, and convert like never before.
+      </p>
+      <a href="#contact" class="btn btn--primary btn--lg magnetic reveal" data-delay="180"><span>Grow With Nixo</span></a>
+    </div>
+    <div class="dominate__media">
+      <figure class="tilt"><img src="assets/img/markint7.png" alt="" /></figure>
+      <img src="assets/img/Marketing-Agency-Hero-Ornament-1.webp" class="orn orn--dom parallax" data-speed="20" alt="" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ INDUSTRIES GRID + FILTER ============ -->
+<section class="industries section" id="industries">
+  <div class="container">
+    <div class="sec-head sec-head--center">
+      <span class="tag reveal">Your industry has a story. We make sure world hears it.</span>
+      <h2 class="reveal" data-delay="60">Content That Fits Your Industry. <span class="hl">Impact That Lasts!</span></h2>
+      <p class="lead reveal" data-delay="120">
+        Not all industries are the same—so why should your content be? At Nixo, we don’t do generic.
+        We craft tailored strategies that speak your industry’s language, captivate your audience,
+        and drive real results.
+      </p>
+    </div>
+
+    <div class="filters reveal" data-delay="160">
+      <button class="filters__btn is-active" data-filter="all">All</button>
+      <button class="filters__btn" data-filter="creative">Creative</button>
+      <button class="filters__btn" data-filter="commerce">Commerce</button>
+      <button class="filters__btn" data-filter="tech">Tech</button>
+    </div>
+
+    <div class="grid grid--3" id="indGrid">
+      <article class="icard reveal" data-cat="creative">
+        <div class="icard__top"><span class="icard__emoji">👗</span><span class="icard__pill">Creative</span></div>
+        <h3>Fashion &amp; Beauty</h3>
+        <p>Stay trending. Stay relevant. From high-end editorial content to influencer marketing and aesthetic social media posts, we create content that keeps your brand at the forefront of fashion.</p>
+        <div class="icard__bar"><span></span></div>
+      </article>
+
+      <article class="icard reveal" data-cat="creative" data-delay="80">
+        <div class="icard__top"><span class="icard__emoji">🩺</span><span class="icard__pill">Trust</span></div>
+        <h3>Healthcare &amp; Wellness</h3>
+        <p>Inspire trust. Build credibility. We craft educational content, patient engagement strategies, and branding that simplifies complex medical info and makes your services approachable.</p>
+        <div class="icard__bar"><span></span></div>
+      </article>
+
+      <article class="icard reveal" data-cat="tech" data-delay="160">
+        <div class="icard__top"><span class="icard__emoji">🚀</span><span class="icard__pill">Tech</span></div>
+        <h3>Tech &amp; Startups</h3>
+        <p>Make the complex, simple. We create sleek, innovative content that transforms technical jargon into compelling brand stories. Whether you’re launching a SaaS product, an AI startup, or a new app.</p>
+        <div class="icard__bar"><span></span></div>
+      </article>
+
+      <article class="icard reveal" data-cat="commerce">
+        <div class="icard__top"><span class="icard__emoji">🛍️</span><span class="icard__pill">Commerce</span></div>
+        <h3>E-Commerce &amp; Retail</h3>
+        <p>Turn browsers into buyers. We create high-converting content, engaging product showcases, and strategic social media campaigns that drive traffic and boost sales.</p>
+        <div class="icard__bar"><span></span></div>
+      </article>
+
+      <article class="icard reveal" data-cat="tech" data-delay="80">
+        <div class="icard__top"><span class="icard__emoji">🎮</span><span class="icard__pill">Gaming</span></div>
+        <h3>Gaming &amp; Esports</h3>
+        <p>Build the hype. Own the game. We design electrifying content, community-driven engagement strategies, and influencer collaborations to help gaming brands and esports teams dominate the digital space.</p>
+        <div class="icard__bar"><span></span></div>
+      </article>
+
+      <article class="icard reveal" data-cat="commerce" data-delay="160">
+        <div class="icard__top"><span class="icard__emoji">🏠</span><span class="icard__pill">Property</span></div>
+        <h3>Real Estate</h3>
+        <p>Sell faster. Sell smarter. Stunning visuals, market insights, and social media strategies designed to turn listings into leads. We create compelling property content that captures attention.</p>
+        <div class="icard__bar"><span></span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS / ACCORDION TIMELINE ============ -->
+<section class="process section section--mint" id="process">
+  <img src="assets/img/Marketing-Agency-About-Us-Hero-Ornament-4.webp" class="orn orn--proc parallax" data-speed="-20" alt="" />
+  <div class="container">
+    <div class="sec-head sec-head--center">
+      <span class="tag reveal">process</span>
+      <h2 class="reveal" data-delay="60">Our Process: From Idea to <span class="script-word script-word--sm">Impact!</span></h2>
+      <p class="lead reveal" data-delay="120">
+        We don’t just create content—we craft digital experiences. Our streamlined process ensures
+        your brand stays relevant, engaging, and ahead of the curve.
+      </p>
+    </div>
+
+    <div class="process__wrap">
+      <div class="accordion reveal" id="accordion">
+        <div class="acc is-open">
+          <button class="acc__head"><span class="acc__step">01</span><h3>Discover &amp; Plan</h3><i class="acc__ico"></i></button>
+          <div class="acc__body"><div class="acc__inner">
+            <p>We analyze your brand, audience, and competitors to create a winning strategy.</p>
+          </div></div>
+        </div>
+        <div class="acc">
+          <button class="acc__head"><span class="acc__step">02</span><h3>Create &amp; Curate</h3><i class="acc__ico"></i></button>
+          <div class="acc__body"><div class="acc__inner">
+            <p>From eye-catching visuals to engaging copy, we craft content that speaks to your audience.</p>
+          </div></div>
+        </div>
+        <div class="acc">
+          <button class="acc__head"><span class="acc__step">03</span><h3>Schedule &amp; Publish</h3><i class="acc__ico"></i></button>
+          <div class="acc__body"><div class="acc__inner">
+            <p>Stay ahead with a well-structured content calendar that keeps your brand consistent.</p>
+          </div></div>
+        </div>
+        <div class="acc">
+          <button class="acc__head"><span class="acc__step">04</span><h3>Engage &amp; Optimize</h3><i class="acc__ico"></i></button>
+          <div class="acc__body"><div class="acc__inner">
+            <p>We track performance, refine strategies, and ensure your brand keeps growing.</p>
+          </div></div>
+        </div>
+      </div>
+
+      <aside class="process__side reveal" data-delay="120">
+        <figure class="tilt"><img src="assets/img/dwdqw.png" alt="" /></figure>
+        <div class="process__cta">
+          <p>Let’s turn your brand into a content powerhouse!</p>
+          <a href="#contact" class="btn btn--primary magnetic"><span>Get Started Today!</span></a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIAL CAROUSEL ============ -->
+<section class="testi section" id="testimonials">
+  <div class="container">
+    <div class="sec-head sec-head--center">
+      <span class="tag reveal">Join the brands that trust Nixo</span>
+      <h2 class="reveal" data-delay="60">Loved by brands that refuse to <span class="hl">blend in</span></h2>
+    </div>
+
+    <div class="carousel reveal" data-delay="120" id="carousel">
+      <button class="carousel__nav carousel__nav--prev" id="cPrev" aria-label="Previous">‹</button>
+      <div class="carousel__viewport" id="cViewport">
+        <div class="carousel__track" id="cTrack">
+
+          <article class="tcard">
+            <span class="tcard__quote">”</span>
+            <div class="tcard__stars">★★★★★</div>
+            <p>We needed high-quality content that matched our brand voice, and Nixo delivered beyond expectations. The consistency and creativity they bring to the table are unmatched.</p>
+            <div class="tcard__sign">Daniel Czarnecki</div>
+            <div class="tcard__foot">
+              <img src="assets/img/marketing-6.png" alt="" />
+              <div><b>Daniel Czarnecki</b><span>CEO &amp; Founder, v500</span></div>
+              <img class="tcard__logo" src="assets/img/1.png" alt="v500" />
+            </div>
+          </article>
+
+          <article class="tcard">
+            <span class="tcard__quote">”</span>
+            <div class="tcard__stars">★★★★★</div>
+            <p>Nixo transformed our brand’s online presence! The content strategy and engagement tactics brought in real results. Highly recommended for any gaming brand looking to level up!</p>
+            <div class="tcard__sign">Ameer Kapri</div>
+            <div class="tcard__foot">
+              <img src="assets/img/ewew.png" alt="" />
+              <div><b>Ameer Kapri</b><span>Gaming Stars</span></div>
+              <img class="tcard__logo" src="assets/img/GAMING-STARS.png" alt="Gaming Stars" />
+            </div>
+          </article>
+
+          <article class="tcard">
+            <span class="tcard__quote">”</span>
+            <div class="tcard__stars">★★★★★</div>
+            <p>From stunning visuals to a well-planned content calendar, Nixo made our social media effortless. Our audience engagement has never been better!</p>
+            <div class="tcard__sign">Sarah Khalid</div>
+            <div class="tcard__foot">
+              <img src="assets/img/marketing-5.png" alt="" />
+              <div><b>Sarah Khalid</b><span>Riwaya</span></div>
+              <img class="tcard__logo" src="assets/img/3.png" alt="Riwaya" />
+            </div>
+          </article>
+
+          <article class="tcard">
+            <span class="tcard__quote">”</span>
+            <div class="tcard__stars">★★★★★</div>
+            <p>Fashion content needs to be fresh and on-trend, and Nixo nailed it! The storytelling, reels, and graphics they created gave our brand a whole new vibe.</p>
+            <div class="tcard__sign">Ayesha Mir</div>
+            <div class="tcard__foot">
+              <img src="assets/img/dada.png" alt="" />
+              <div><b>Ayesha Mir</b><span>Outfitters</span></div>
+              <img class="tcard__logo" src="assets/img/4.png" alt="Outfitters" />
+            </div>
+          </article>
+
+        </div>
+      </div>
+      <button class="carousel__nav carousel__nav--next" id="cNext" aria-label="Next">›</button>
+      <div class="carousel__dots" id="cDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING CARDS + TABLE ============ -->
+<section class="pricing section section--mint" id="pricing">
+  <div class="container">
+    <div class="sec-head sec-head--center">
+      <span class="tag reveal">Transparent Pricing, Maximum Impact!</span>
+      <h2 class="reveal" data-delay="60">Choose a Plan That Fuels Your <span class="script-word script-word--sm">Growth!</span></h2>
+      <p class="lead reveal" data-delay="120">
+        Quality content shouldn’t be a luxury—it should be a necessity. Whether you’re looking for a
+        structured social media plan or unlimited creative power, we’ve got the perfect package!
+      </p>
+
+      <div class="switch reveal" data-delay="160">
+        <span class="switch__lbl is-active" data-bill="mo">Monthly</span>
+        <button class="switch__ctl" id="billSwitch" aria-label="Toggle billing"><span></span></button>
+        <span class="switch__lbl" data-bill="yr">Yearly <b>−20%</b></span>
+      </div>
+    </div>
+
+    <div class="grid grid--2 pricing__grid">
+      <article class="pcard reveal tilt">
+        <header>
+          <h3>Professional Pack</h3>
+          <p>A structured social media plan for brands ready to stay consistent.</p>
+        </header>
+        <div class="pcard__price"><b data-mo="XXX" data-yr="XXX">XXX</b><span>PKR /month</span></div>
+        <ul class="pcard__list">
+          <li><i>✔</i>30 Custom Posts (Static, Carousels)</li>
+          <li><i>✔</i>5 Reels &amp; Shorts (HD)</li>
+          <li><i>✔</i>Engaging Copy &amp; Hashtag Strategy</li>
+          <li><i>✔</i>Monthly Content Calendar</li>
+          <li><i>✔</i>Dedicated Account Manager</li>
+          <li><i>✔</i>24/7 Customer &amp; Chat Support</li>
+        </ul>
+        <a href="#contact" class="btn btn--ghost btn--block magnetic"><span>Get Started</span></a>
+      </article>
+
+      <article class="pcard pcard--pop reveal tilt" data-delay="90">
+        <span class="pcard__ribbon">Most Popular</span>
+        <header>
+          <h3>Unlimited Premium Pack</h3>
+          <p>Unlimited creative power for brands that dare to dominate.</p>
+        </header>
+        <div class="pcard__price"><b data-mo="XXX" data-yr="XXX">XXX</b><span>PKR /month</span></div>
+        <ul class="pcard__list pcard__list--2">
+          <li><i>✔</i>60 Social Media Posts</li>
+          <li><i>✔</i>30 Reels &amp; Shorts</li>
+          <li><i>✔</i>Full Social Media Management</li>
+          <li><i>✔</i>Sales Funnels &amp; Landing Pages</li>
+          <li><i>✔</i>Paid Ads &amp; Growth Strategy</li>
+          <li><i>✔</i>SEO &amp; Blog Writing</li>
+          <li><i>✔</i>Branding Kit &amp; Guidelines</li>
+          <li><i>✔</i>Influencer Marketing Strategy</li>
+          <li><i>✔</i>Advanced Performance Analytics</li>
+          <li><i>✔</i>Complete Brand Positioning</li>
+          <li><i>✔</i>Motion Graphics &amp; Animations</li>
+          <li><i>✔</i>Priority Support &amp; Strategy Calls</li>
+        </ul>
+        <a href="#contact" class="btn btn--primary btn--block magnetic"><span>Get Started</span></a>
+      </article>
+    </div>
+
+    <!-- COMPARISON TABLE -->
+    <div class="tablewrap reveal">
+      <h3 class="tablewrap__title">Compare every feature</h3>
+      <div class="table-scroll">
+        <table class="ptable">
+          <thead>
+            <tr><th>Feature</th><th>Professional Pack</th><th class="is-pop">Unlimited Premium</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Social Media Posts</td><td>30</td><td class="is-pop">60</td></tr>
+            <tr><td>Reels &amp; Shorts (HD)</td><td>5</td><td class="is-pop">30</td></tr>
+            <tr><td>Engaging Copy &amp; Hashtag Strategy</td><td class="yes">✔</td><td class="is-pop yes">✔</td></tr>
+            <tr><td>Monthly Content Calendar</td><td class="yes">✔</td><td class="is-pop yes">✔</td></tr>
+            <tr><td>Dedicated Account Manager</td><td class="yes">✔</td><td class="is-pop yes">✔</td></tr>
+            <tr><td>24/7 Customer &amp; Chat Support</td><td class="yes">✔</td><td class="is-pop yes">✔</td></tr>
+            <tr><td>Full Social Media Management</td><td class="no">—</td><td class="is-pop yes">✔</td></tr>
+            <tr><td>Sales Funnels &amp; Landing Pages</td><td class="no">—</td><td class="is-pop yes">✔</td></tr>
+            <tr><td>Paid Ads &amp; Growth Strategy</td><td class="no">—</td><td class="is-pop yes">✔</td></tr>
+            <tr><td>SEO &amp; Blog Writing</td><td class="no">—</td><td class="is-pop yes">✔</td></tr>
+            <tr><td>Branding Kit &amp; Guidelines</td><td class="no">—</td><td class="is-pop yes">✔</td></tr>
+            <tr><td>Influencer Marketing Strategy</td><td class="no">—</td><td class="is-pop yes">✔</td></tr>
+            <tr><td>Advanced Performance Analytics</td><td class="no">—</td><td class="is-pop yes">✔</td></tr>
+            <tr><td>Complete Brand Positioning</td><td class="no">—</td><td class="is-pop yes">✔</td></tr>
+            <tr><td>Motion Graphics &amp; Animations</td><td class="no">—</td><td class="is-pop yes">✔</td></tr>
+            <tr><td>Priority Support &amp; Strategy Calls</td><td class="no">—</td><td class="is-pop yes">✔</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="tablewrap__note">Need Something Custom? <a href="#contact">Let’s Tailor One for You!</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAREERS ============ -->
+<section class="careers section section--navy">
+  <div class="container careers__inner">
+    <div class="careers__media">
+      <figure class="tilt"><img src="assets/img/marketing-6-1.png" alt="" /></figure>
+      <figure class="tilt careers__media2"><img src="assets/img/marketing-6-2.png" alt="" /></figure>
+    </div>
+    <div class="careers__copy">
+      <span class="tag tag--light reveal">Be Part of Something Bigger. Be Part of Nixo.</span>
+      <h2 class="reveal" data-delay="60">Join Us at <span class="script-word script-word--light">Nixo</span></h2>
+      <p class="lead reveal" data-delay="120">
+        At Nixo, we don’t just create content—we build brands, craft strategies, and turn ideas into
+        impact. If you’re passionate about social media, content creation, and digital growth, this
+        is the place for you. We’re looking for bold thinkers, creative minds, and digital
+        trailblazers to join our team and shape the future of online branding.
+      </p>
+      <a href="#contact" class="btn btn--primary btn--lg magnetic reveal" data-delay="180"><span>View Current Job Openings</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA / CONTACT ============ -->
+<section class="cta section" id="contact">
+  <div class="container">
+    <div class="cta__box reveal">
+      <span class="blob blob--4"></span>
+      <h2>Let’s turn your brand into a <span class="script-word script-word--sm">content powerhouse!</span></h2>
+      <p>Stay Ahead. Stay Inspired. Subscribe Now!</p>
+
+      <form class="cta__form" id="ctaForm" novalidate>
+        <div class="field">
+          <input type="email" id="ctaEmail" placeholder="Enter your email address" required />
+          <button type="submit" class="btn btn--primary magnetic"><span>Get Started Today!</span></button>
+        </div>
+        <p class="cta__msg" id="ctaMsg"></p>
+      </form>
+
+      <div class="cta__contacts">
+        <a href="mailto:info@themavenpk.com" class="cta__c"><i>✉</i>info@themavenpk.com</a>
+        <a href="tel:+923056111222" class="cta__c"><i>✆</i>+92 305 6 111 222</a>
+        <span class="cta__c"><i>⌖</i>Green Acres 3A Commercial Area, Lhr</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__top">
+    <div class="footer__brand">
+      <img src="assets/img/dss.png" alt="Nixo" class="footer__logo" />
+      <p>We craft stories that stick, visuals that speak, and strategies that scale. Bold Brands, Bigger Impact.</p>
+
+      <!-- FOOTER SIGNATURE -->
+      <div class="sign sign--light">
+        <div class="sign__mark">
+          <span class="sign__name">Nixo</span>
+          <svg class="sign__flourish" viewBox="0 0 220 40" fill="none">
+            <path d="M4 30C40 8 78 4 108 14c26 9 12 20-2 16-13-4 6-19 44-19 24 0 47 6 66 15" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="sign__meta"><b>Crafted with care</b><span>by the Nixo Content Grid team</span></div>
+      </div>
+
+      <div class="socials">
+        <a href="#" aria-label="WhatsApp" data-cursor="link">WA</a>
+        <a href="#" aria-label="Instagram" data-cursor="link">IG</a>
+        <a href="#" aria-label="LinkedIn" data-cursor="link">IN</a>
+        <a href="#" aria-label="Facebook" data-cursor="link">FB</a>
+      </div>
+    </div>
+
+    <div class="footer__cols">
+      <div class="fcol">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Content Creation</a></li>
+          <li><a href="#services">Branding &amp; Design</a></li>
+          <li><a href="#services">Promotional Ads</a></li>
+          <li><a href="#services">UGC Content Ads</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">Who We Are</a></li>
+          <li><a href="#contact">Work With Us</a></li>
+          <li><a href="#industries">Our Portfolio</a></li>
+          <li><a href="#about">Meet Founder</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Collaborate</h4>
+        <ul>
+          <li><a href="#contact">Partner With Us</a></li>
+          <li><a href="#contact">Brand Partnerships</a></li>
+          <li><a href="#contact">Affiliate Program</a></li>
+          <li><a href="#contact">Business Affiliations</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#services">Social Media Audit</a></li>
+          <li><a href="#services">Content Strategy</a></li>
+          <li><a href="#services">Content Calendar</a></li>
+          <li><a href="#services">Social Media Post</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <p>© 2025 NIXO by Maven PK. All Rights Reserved. Bold Brands, Bigger Impact.</p>
+    <a href="#home" class="totop" id="toTop" aria-label="Back to top">↑</a>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
