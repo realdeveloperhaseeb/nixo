@@ -530,6 +530,33 @@
     });
   })();
 
+  /* ---------------- RIGHT-CLICK DETERRENT ----------------
+     Suppresses the context menu so assets can't be grabbed via
+     "Save image as". This is a deterrent, NOT protection: the markup,
+     styles, script and images are all delivered to the client and stay
+     reachable through DevTools, Ctrl+U, view-source: or curl. Anything a
+     browser can render, a visitor can save. */
+  (function noContextMenu() {
+    const toast = document.createElement('div');
+    toast.className = 'toast';
+    toast.setAttribute('role', 'status');
+    toast.innerHTML = '<svg class="ico" aria-hidden="true"><use href="#i-lock"/></svg>' +
+                      '<span>Content is protected.</span>';
+    document.body.appendChild(toast);
+
+    let timer;
+    document.addEventListener('contextmenu', (e) => {
+      // Form fields keep their native menu: visitors need paste and
+      // spellcheck to complete the signup field.
+      if (e.target.closest('input, textarea, select, [contenteditable]')) return;
+
+      e.preventDefault();
+      toast.classList.add('is-on');
+      clearTimeout(timer);
+      timer = setTimeout(() => toast.classList.remove('is-on'), 1600);
+    });
+  })();
+
   /* ---------------- HERO CHIP TICKER ---------------- */
   (function chip() {
     const el = $('#chipEngage');
