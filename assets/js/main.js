@@ -381,9 +381,13 @@
 
     btns.forEach(btn => {
       btn.addEventListener('click', () => {
+        /* There is no "All" button: the grid starts unfiltered, and clicking
+           the active filter again clears it, which is the only way back to the
+           full set. */
+        const wasActive = btn.classList.contains('is-active');
         btns.forEach(b => b.classList.remove('is-active'));
-        btn.classList.add('is-active');
-        const f = btn.dataset.filter;
+        if (!wasActive) btn.classList.add('is-active');
+        const f = wasActive ? 'all' : btn.dataset.filter;
 
         cards.forEach((card, i) => {
           const show = f === 'all' || card.dataset.cat === f;
@@ -495,24 +499,6 @@
       if (!ticking) { requestAnimationFrame(update); ticking = true; }
     }, { passive: true });
     update();
-  })();
-
-  /* ---------------- NEWSLETTER FORM ---------------- */
-  (function form() {
-    const f = $('#ctaForm');
-    if (!f) return;
-    const input = $('#ctaEmail'), msg = $('#ctaMsg');
-
-    f.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const v = (input.value || '').trim();
-      const ok = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
-      msg.className = 'cta__msg ' + (ok ? 'ok' : 'err');
-      msg.textContent = ok
-        ? 'You’re in! Your FREE content calendar is on its way to ' + v
-        : 'Please enter a valid email address.';
-      if (ok) { input.value = ''; f.querySelector('.btn').style.transform = 'scale(.97)'; setTimeout(() => f.querySelector('.btn').style.transform = '', 200); }
-    });
   })();
 
   /* ---------------- SMOOTH ANCHORS ---------------- */
