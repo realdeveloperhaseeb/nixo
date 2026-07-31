@@ -493,14 +493,6 @@ p{margin:0 0 1rem}
 }
 
 /* ---------- INDUSTRIES ---------- */
-.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:clamp(28px,3.6vw,44px)}
-.filters__btn{
-  padding:10px 22px;border-radius:99px;font-size:.92rem;font-weight:500;color:var(--muted);
-  border:1px solid var(--line);background:#fff;transition:.35s var(--ease);
-}
-.filters__btn:hover{color:var(--navy);border-color:var(--green-2);transform:translateY(-2px)}
-.filters__btn.is-active{background:var(--green);border-color:var(--green);color:var(--navy);font-weight:600;box-shadow:var(--sh-green)}
-
 .icard{
   position:relative;padding:30px 28px;border-radius:var(--r-lg);background:#fff;border:1px solid var(--line);
   overflow:hidden;transition:transform .5s var(--ease),box-shadow .5s var(--ease),opacity .4s;
@@ -511,7 +503,6 @@ p{margin:0 0 1rem}
 }
 .icard:hover{transform:translateY(-8px);box-shadow:var(--sh-lg)}
 .icard:hover::before{opacity:1}
-.icard.is-hidden{display:none}
 .icard>*{position:relative;z-index:2}
 .icard__top{display:flex;align-items:center;margin-bottom:16px}
 .icard__emoji{width:52px;height:52px;display:grid;place-items:center;font-size:1.45rem;border-radius:16px;background:var(--mint);border:1px solid var(--line);transition:.5s var(--ease)}

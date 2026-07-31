@@ -373,35 +373,6 @@
     restart();
   })();
 
-  /* ---------------- INDUSTRY FILTERS ---------------- */
-  (function filters() {
-    const btns = $$('.filters__btn');
-    const cards = $$('#indGrid .icard');
-    if (!btns.length || !cards.length) return;
-
-    btns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        /* There is no "All" button: the grid starts unfiltered, and clicking
-           the active filter again clears it, which is the only way back to the
-           full set. */
-        const wasActive = btn.classList.contains('is-active');
-        btns.forEach(b => b.classList.remove('is-active'));
-        if (!wasActive) btn.classList.add('is-active');
-        const f = wasActive ? 'all' : btn.dataset.filter;
-
-        cards.forEach((card, i) => {
-          const show = f === 'all' || card.dataset.cat === f;
-          card.classList.toggle('is-hidden', !show);
-          if (show) {
-            card.style.animation = 'none';
-            void card.offsetWidth;
-            card.style.animation = `fadeUp .5s var(--ease-out) ${i * 60}ms both`;
-          }
-        });
-      });
-    });
-  })();
-
   /* ---------------- PRICING BILLING SWITCH ---------------- */
   (function billing() {
     const sw = $('#billSwitch');
