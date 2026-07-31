@@ -235,10 +235,20 @@ p{margin:0 0 1rem}
 .topbar__close:hover{color:var(--green)}
 
 /* ---------- HEADER ---------- */
+/* The frosted background lives on ::before, NOT on .header itself.
+   backdrop-filter (like transform/filter/perspective) makes an element the
+   containing block for its position:fixed descendants. With it on .header,
+   the off-canvas .nav resolved inset:0 against the 79px header instead of the
+   viewport and opened as an invisible sliver. A pseudo-element is a sibling of
+   .nav, not an ancestor, so the effect survives without the side effect. */
 .header{
-  position:sticky;top:0;z-index:900;background:rgba(255,255,255,.86);
-  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  position:sticky;top:0;z-index:900;
   border-bottom:1px solid transparent;transition:.4s var(--ease);
+}
+.header::before{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:rgba(255,255,255,.86);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
 }
 .header.is-stuck{border-color:rgba(21,52,75,.09);box-shadow:0 6px 30px rgba(21,52,75,.07)}
 .header__inner{display:flex;align-items:center;justify-content:space-between;gap:20px;height:var(--header-h);transition:height .4s var(--ease)}
@@ -763,7 +773,11 @@ a.cta__c:hover i{background:var(--green);border-color:var(--green);transform:tra
   .nav__cta .btn{width:100%}
   .header__quote{display:none}
   .burger{display:block;z-index:960}
-  .nav-overlay{position:fixed;inset:0;z-index:940;background:rgba(21,52,75,.45);backdrop-filter:blur(3px);opacity:0;visibility:hidden;transition:.4s}
+  /* Must sit BELOW .header (z-index 900). .nav lives inside the header, so the
+     header's stacking context caps it: its own z-index:950 cannot lift it above
+     a sibling of <body>. An overlay above 900 would dim and blur the open menu
+     itself. Below 900, the panel and the header stay crisp over the dimmed page. */
+  .nav-overlay{position:fixed;inset:0;z-index:880;background:rgba(21,52,75,.45);backdrop-filter:blur(3px);opacity:0;visibility:hidden;transition:.4s}
   .nav-overlay.is-on{opacity:1;visibility:visible}
 
   .about__inner,.dominate__inner,.careers__inner{grid-template-columns:1fr;gap:40px}
