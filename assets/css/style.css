@@ -84,6 +84,9 @@ p{margin:0 0 1rem}
 
 .lead{font-size:clamp(1rem,1.2vw,1.13rem);color:var(--muted);max-width:62ch}
 .sec-head{max-width:820px;margin-bottom:clamp(36px,5vw,60px)}
+/* lets a long heading run on one line instead of needing a forced <br>.
+   .lead is capped at 62ch on its own, so body copy stays readable. */
+.sec-head--wide{max-width:none}
 .sec-head--center{margin-inline:auto;text-align:center}
 .sec-head--center .lead{margin-inline:auto}
 
@@ -469,6 +472,14 @@ p{margin:0 0 1rem}
 .dominate__inner{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,64px);align-items:center}
 .dominate__media{position:relative}
 .dominate__media figure{margin:0;border-radius:var(--r-xl);overflow:hidden}
+/* Transparent cutout: no card edge to round or clip. The source is cropped
+   straight through the subject's hips, so a drop-shadow would trace that flat
+   bottom edge and read as a box. Fade the last stretch into the navy instead. */
+.dominate__media figure.tilt--cutout{
+  border-radius:0;overflow:visible;
+  -webkit-mask-image:linear-gradient(to bottom,#000 74%,transparent 99%);
+          mask-image:linear-gradient(to bottom,#000 74%,transparent 99%);
+}
 
 /* ---------- INDUSTRIES ---------- */
 .filters{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:clamp(28px,3.6vw,44px)}
