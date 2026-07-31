@@ -587,17 +587,25 @@ p{margin:0 0 1rem}
   transition:transform .5s var(--ease),box-shadow .5s var(--ease);overflow:hidden;
 }
 .pcard:hover{transform:translateY(-6px);box-shadow:var(--sh-lg)}
-.pcard--pop{background:var(--navy);border-color:var(--navy);color:rgba(255,255,255,.76);box-shadow:var(--sh-lg)}
+.pcard--pop{background:var(--navy);border-color:var(--navy);color:rgba(255,255,255,.76);box-shadow:var(--sh-lg);overflow:visible;padding-top:48px}
 .pcard--pop h3{color:#fff}
 .pcard--pop .pcard__price b{color:var(--green)}
 .pcard--pop .pcard__price span{color:rgba(255,255,255,.6)}
 .pcard--pop .pcard__list li{color:rgba(255,255,255,.8)}
 .pcard--pop .pcard__list i{background:var(--green);color:var(--navy)}
+/* Badge sits centred on the card's top edge. The old version was a 45deg
+   corner banner, which needed the card to clip it and left the text sitting
+   crooked in the rounded corner. This needs overflow visible instead, plus
+   extra top padding on the card so the heading clears it. */
 .pcard__ribbon{
-  position:absolute;top:22px;right:-38px;transform:rotate(45deg);
-  background:var(--green);color:var(--navy);font-size:.76rem;font-weight:700;letter-spacing:.06em;
-  text-transform:uppercase;padding:7px 46px;box-shadow:var(--sh);
+  position:absolute;top:0;left:50%;transform:translate(-50%,-50%);
+  display:inline-flex;align-items:center;gap:7px;white-space:nowrap;
+  padding:9px 20px;border-radius:99px;
+  background:var(--green);color:var(--navy);
+  font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  box-shadow:var(--sh-green);
 }
+.pcard__ribbon .ico{width:13px;height:13px}
 .pcard header{margin-bottom:22px}
 .pcard header p{margin:8px 0 0;font-size:.94rem;opacity:.8}
 .pcard__price{display:flex;align-items:baseline;gap:10px;padding-bottom:22px;margin-bottom:22px;border-bottom:1px solid var(--line)}
