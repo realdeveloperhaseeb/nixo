@@ -475,7 +475,8 @@ p{margin:0 0 1rem}
 /* Transparent cutout: no card edge to round or clip. The source is cropped
    straight through the subject's hips, so a drop-shadow would trace that flat
    bottom edge and read as a box. Fade the last stretch into the navy instead. */
-.dominate__media figure.tilt--cutout{
+.dominate__media figure.tilt--cutout,
+.careers__media figure.tilt--cutout{
   border-radius:0;overflow:visible;
   -webkit-mask-image:linear-gradient(to bottom,#000 74%,transparent 99%);
           mask-image:linear-gradient(to bottom,#000 74%,transparent 99%);
@@ -645,7 +646,6 @@ p{margin:0 0 1rem}
 .careers__inner{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,64px);align-items:center}
 .careers__media{position:relative}
 .careers__media figure{margin:0;border-radius:var(--r-xl);overflow:hidden}
-.careers__media2{position:absolute;width:52%;right:-8%;bottom:-10%;border:6px solid var(--navy);border-radius:var(--r-xl);animation:floaty2 7s ease-in-out infinite}
 
 /* ---------- CTA ---------- */
 .cta__box{
@@ -762,7 +762,6 @@ a.cta__c:hover i{background:var(--green);border-color:var(--green);transform:tra
   .about__inner,.dominate__inner,.careers__inner{grid-template-columns:1fr;gap:40px}
   .careers__inner{direction:ltr}
   .careers__media{order:2;max-width:520px}
-  .careers__media2{width:46%}
   .grid--3{grid-template-columns:repeat(2,1fr)}
   .tabs__grid{grid-template-columns:1fr}
   .tabs__img{order:-1}
