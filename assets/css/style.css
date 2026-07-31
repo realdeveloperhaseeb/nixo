@@ -699,6 +699,13 @@ a.cta__c:hover i{background:var(--green);border-color:var(--green);transform:tra
   padding:22px 0;border-top:1px solid rgba(255,255,255,.1);
 }
 .footer__bottom p{margin:0;font-size:.88rem}
+/* deliberately understated: sits with the copyright without competing with it */
+.credit{
+  display:inline-block;margin-left:10px;font-size:.72rem;letter-spacing:.02em;
+  color:rgba(255,255,255,.34);border-bottom:1px solid transparent;
+  transition:color .3s var(--ease),border-color .3s var(--ease);
+}
+.credit:hover{color:var(--green);border-color:rgba(83,243,135,.5)}
 .totop{
   width:44px;height:44px;display:grid;place-items:center;border-radius:50%;
   background:var(--green);color:var(--navy);font-size:1.15rem;font-weight:700;
