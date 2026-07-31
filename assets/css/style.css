@@ -314,8 +314,9 @@ p{margin:0 0 1rem}
 
 .hero__mini{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .hero__avatars{display:flex}
+/* sources are pre-cropped square headshots, so cover needs no offset */
 .hero__avatars img{
-  width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:top center;
+  width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:center;
   border:3px solid #fff;margin-left:-13px;background:var(--mint);box-shadow:var(--sh-sm);
   transition:transform .35s var(--ease);
 }

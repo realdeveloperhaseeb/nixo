@@ -1,0 +1,4 @@
+# Full-size source portraits (1080x1350, ~6.6MB total). They stay in git so the
+# avatars can be re-cropped later, but the site only ever loads the generated
+# *-sq.webp crops, so there is no reason to upload these on every deploy.
+assets/img/group/*.png
